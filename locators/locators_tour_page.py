@@ -10,7 +10,7 @@ class MainPage(WebPage):
 
     def __init__(self, web_driver, url=''):
         if not url:
-            url = os.getenv("MAIN_URL") or 'https://systemofadown.com/'
+            url = os.getenv("MAIN_URL") or 'https://systemofadown.com/tour/'
 
         super().__init__(web_driver, url)
 
@@ -19,7 +19,6 @@ class MainPage(WebPage):
     btn_headers_merch = WebElement(id='menu-item-13')
     btn_headers_music = WebElement(id='menu-item-14')
 
-    btn_shop_now = WebElement(xpath='//*[@title="Official Store - Shop Now"]')
     btn_join_the_list = WebElement(xpath='//*[@title="Join The Mailing List"]')
 
     btn_home_link = WebElement(xpath='//*[contains(text(), "Home")]')
@@ -31,6 +30,3 @@ class MainPage(WebPage):
     btn_footers_tour = WebElement(xpath='(//footer//a)[2]')
     btn_footers_merch = WebElement(xpath='(//footer//a)[3]')
     btn_footers_music = WebElement(xpath='(//footer//a)[4]')
-
-    btn_count_box = ManyWebElements(xpath='(//*[contains(concat(), section])[1]')
-    video_count = ManyWebElements(xpath='(//*[contains(concat(' ', normalize-space(@class), ' '))])[1]')

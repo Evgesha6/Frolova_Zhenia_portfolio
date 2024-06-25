@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
+#содержатся методы, которые позволяют взаимодействовать с браузером
 class WebPage(object):
     _web_driver = None
 
