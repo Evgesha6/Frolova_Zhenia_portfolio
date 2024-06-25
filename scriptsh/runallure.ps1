@@ -1,0 +1,1 @@
+allure serve C:\Users\frolov\PycharmProjects\Frolova_Zhenia_portfolio\allure_reports
