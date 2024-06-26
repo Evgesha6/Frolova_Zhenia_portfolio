@@ -82,23 +82,6 @@ def test_footers(web_browser):
         check.equal(elements.get_text(), elements_text)
 
 
-# @allure.story('Тест для проверки главной страницы')
-# @allure.feature('Тест для проверки нажатия кнопки')
-# def test_click(web_browser):
-#     """Этот тест проверяет нажатие кнопки"""
-#
-#    locators = MainPage(web_browser)
-#
-#    clickable_buttons = [
-#        (locators.btn_join_the_list),
-#        (locators.btn_shop_now)
-#    ]
-# # Нахождение элементов на странице
-# single_click_btn = driver.find_element_by_id("singleClickBtn")
-# # Нажатие на кнопки
-# single_click_btn.click()
-# WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "dynamicClickMessage")))
-
 
 @allure.story('Тест для проверки главной страницы')
 @allure.feature('Тест для проверки количества плиток в блоке "SOAD MERCH"')

@@ -24,7 +24,7 @@ def error():
 def run_allure():
     """ Эта функция запускает и отвечает за генерацию отчета allure. """
 
-    cmd = ["./scriptsh/runallure.ps1"]
+    cmd = ["powershell","./scriptsh/runallure.ps1"]
     with subprocess.Popen(cmd, stdout=subprocess.PIPE,
                           stderr=subprocess.PIPE,
                           stdin=subprocess.PIPE,
